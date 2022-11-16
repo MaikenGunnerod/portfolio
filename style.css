@@ -2,6 +2,56 @@
 /* HEADER */
 /***********************/
 
+.header {
+  padding: 2rem 0;
+  background-color: #21252c;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.nav-list {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+  margin: 0 3rem;
+  align-items: center;
+}
+
+.nav-list-item {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  list-style: none;
+  text-align: center;
+  padding: 2px 8px;
+  /* border-left: 2px solid #7149b3; */
+}
+
+.nav-list-item a:link,
+.nav-list-item a:visited {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-list-item:first-of-type {
+  margin-right: auto;
+  border-bottom: none;
+}
+
+.home-icon {
+  border: none;
+}
+
+.home-icon-pic {
+  width: 3rem;
+}
+
+.icon {
+  width: 2.5rem;
+}
+
 /***********************/
 /* HERO SECTION */
 /***********************/
