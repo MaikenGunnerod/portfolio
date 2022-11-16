@@ -112,12 +112,81 @@
 }
 
 .project-item:hover {
-  /* transform: translateY(-5px); */
+  transform: translateY(-5px);
   /* transform: scale(1.02); */
   box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.3s;
 }
 
 /* IMAGE PART */
+
+.project-item:hover .button {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.project-item .project-image-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none;
+  transition: all ease 0.3s;
+}
+
+.project-item:hover .project-image-container:before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.project-item:hover .button:first-of-type {
+  transform: translate(-90%, -50%);
+}
+
+.project-item:hover .button:last-of-type {
+  transform: translate(90%, -50%);
+}
+
+.button-logo {
+  width: 5rem;
+}
+
+.github {
+  filter: invert(1);
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  /* gap: 2.4rem; */
+}
+
+.button:link,
+.button:visited {
+  padding: 0.6rem;
+  opacity: 0;
+  display: none;
+  /* background-color: #282d35; */
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  border-radius: 5000px;
+  transition: all ease 0.3s;
+}
+
+.button:hover,
+.button:active {
+  background-color: #282d35;
+  transition: all ease 0.3s;
+}
+
 .project-image-container {
   width: 100%;
   height: 16.875rem; /* 16:9 aspect ratio */
@@ -125,6 +194,7 @@
   margin: 0 auto;
   border-radius: 5px 5px 0 0;
   background-color: #727d92;
+  position: relative;
   /* background-image: url(images/screencapture-hubble.png); */
   /* background-size: cover; */
 }
@@ -135,7 +205,7 @@
 
 /* INFO PART */
 .project-info {
-  margin: 2.4rem auto;
+  margin: 2.4rem auto 3.6rem auto;
   padding: 0 1.2rem;
   align-items: center;
 }
@@ -147,31 +217,6 @@
 
 .project-description {
   color: #c7c7c7;
-  margin-bottom: 1.2rem;
-}
-
-.project-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 2.4rem;
-}
-
-.button:link,
-.button:visited {
-  padding: 1.2rem 2.4rem;
-  background-color: #7149b3;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  border-radius: 5px;
-  transition: all ease 0.3s;
-}
-
-.button:hover,
-.button:active {
-  background-color: #59398d;
 }
 
 /* VIEW MORE BUTTON */
