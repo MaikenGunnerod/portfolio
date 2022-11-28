@@ -133,7 +133,7 @@ p {
 }
 
 .footer-nav-wrapper {
-  display: flex;
+  display: grid;
   gap: 7.2rem;
   width: fit-content;
   margin: 0 auto;
@@ -142,7 +142,7 @@ p {
 
 .footer-nav-column {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 2.4rem;
 }
 
