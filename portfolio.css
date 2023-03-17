@@ -1,4 +1,12 @@
 .projects-grid {
   padding-top: 4.8rem;
   margin: 0 0 4.8rem 0;
+  row-gap: 4.8rem;
+  column-gap: 9.6rem;
+}
+
+.section-title {
+  font-size: 4.8rem;
+  border-bottom: solid 4px #7149b3;
+  padding-bottom: 1.2rem;
 }

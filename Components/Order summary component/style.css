@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.4rem;
+  color: #7280a7;
+}
+
+.container {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+}
+
+.summary-card {
+  width: 35rem;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.text-container {
+  padding: 3rem;
+}
+
+.title,
+.plan-title {
+  color: #1f2f56;
+}
+
+/* SMALLER SELECTIONS */
+.image {
+  width: 100%;
+}
+
+.title {
+  font-weight: 900;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.plan-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7ff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.plan-container .plan-container--2 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.music-icon {
+  height: 4rem;
+}
+
+.price-and-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.plan-title {
+  font-weight: 700;
+}
+
+.change-plan:link,
+.change-plan:visited {
+  justify-self: end;
+  display: inline-block;
+  color: #3829e0;
+}
+
+.change-plan:hover,
+.change-plan:active {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.8);
+}
+
+.proceed:link,
+.proceed:visited {
+  color: #fff;
+  background-color: #3829e0;
+  display: block;
+  padding: 1rem 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.proceed:hover,
+.proceed:active {
+  background-color: rgba(56, 41, 224, 0.8);
+}
+
+.cancel:link,
+.cancel:visited {
+  color: #7280a7;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.cancel:hover,
+.cancel:active {
+  color: #1f2f56;
+}

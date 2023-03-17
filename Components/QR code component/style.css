@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #d6e2f0;
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.qr-code-component {
+  background-color: #fff;
+  width: 30rem;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.qr-image {
+  width: 100%;
+  border-radius: 25px;
+  padding: 1.5rem;
+}
+
+.text-container {
+  padding: 0 2.5rem;
+}
+
+.primary-text {
+  color: #1f3251;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.secondary-text {
+  color: #7b879d;
+  margin-bottom: 3rem;
+}
