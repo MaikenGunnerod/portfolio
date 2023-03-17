@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #090b1a;
+  font-size: 1.4rem;
+  font-family: "inter", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+}
+
+.stats-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 5px;
+  width: 85rem;
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+}
+
+.text-box {
+  margin: 5rem;
+}
+
+.main-heading,
+.stat-number {
+  color: hsl(0, 0%, 100%);
+}
+
+.main-heading {
+  margin-bottom: 2.5rem;
+}
+
+.main-heading-highlight {
+  color: #aa5cdb;
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 6rem;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+/* STATS */
+.stats-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.stat-number {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-heading {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.image-box {
+  background-image: url(images/image-header-desktop.jpg);
+  background-color: rgba(170, 92, 219, 0.7);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center;
+}

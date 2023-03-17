@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* GENERAL */
+
+body {
+  background-color: #0d192b;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  color: #8bacda;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nft-card {
+  background-color: #14253d;
+  width: 25rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.price-time-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #2f415b;
+}
+
+/* SMALLER SELECTORS */
+
+.price-container,
+.time-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.title:link,
+.creator-name:link,
+.title:visited,
+.creator-name:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.title:hover,
+.creator-name:hover,
+.title:active,
+.creator-name:active {
+  color: #00fff7;
+}
+
+/* INDIVIDUAL ELEMENTS */
+
+.main-image:link,
+.main-image:visited {
+  width: 21rem;
+  border-radius: 5px;
+  background-image: url("images/image-equilibrium.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 21rem;
+  display: block;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.main-image:hover,
+.main-image:active {
+  opacity: 100%;
+  background-image: url("images/icon-view.svg"),
+    linear-gradient(rgba(0, 255, 247, 0.5), rgb(0, 255, 247, 0.5)),
+    url("images/image-equilibrium.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 50%;
+  background-size: 3rem 3rem, cover, cover;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.price {
+  color: #00fff7;
+}
+
+.icon {
+  height: 1.2rem;
+}
+
+/* CREATOR */
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.creator-avatar {
+  width: 2.5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}

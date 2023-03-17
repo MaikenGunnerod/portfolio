@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Preview card of NFT" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="nft-card">
+        <a
+          href="#"
+          class="main-image"
+          role="img"
+          aria-label="Image of Equilibrium NFT"
+        ></a>
+        <a href="#" class="title">Equilibrium #3429</a>
+        <p class="description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="price-time-container">
+          <div class="price-container">
+            <img
+              src="images/icon-ethereum.svg"
+              alt="Etherium icon"
+              class="icon"
+            />
+            <p class="price">0.041 ETH</p>
+          </div>
+          <div class="time-container">
+            <img src="images/icon-clock.svg" alt="Clock icon" class="icon" />
+            <p class="time-left">3 days left</p>
+          </div>
+        </div>
+        <div class="creator">
+          <img
+            src="images/image-avatar.png"
+            alt="Image of the creator: Jules Wyvern"
+            class="creator-avatar"
+          />
+          <p>Creation of <a href="#" class="creator-name">Jules Wyvern</a></p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

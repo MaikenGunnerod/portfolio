@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90rem;
+}
+
+.box {
+  padding: 5rem;
+}
+
+.box--1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.box--2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.box--3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.car-icon {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  margin-bottom: 7rem;
+}
+
+.button:link,
+.button:visited {
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+}
+
+.button:hover,
+.button:active {
+}
+
+.button--1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.button--2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.button--3 {
+  color: hsl(179, 100%, 13%);
+}
