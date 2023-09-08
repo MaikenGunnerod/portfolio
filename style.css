@@ -43,7 +43,7 @@
 
 .projects-grid {
 	margin: 2.4rem 0 4.8rem 0;
-	column-gap: 4.8rem;
+	column-gap: 7.2rem;
 	row-gap: 9.6rem;
 	width: fit-content;
 }
@@ -162,11 +162,28 @@
 	width: 100%;
 }
 
+.project-status {
+	background-color: #bebebe;
+	position: absolute;
+	color: #000;
+	font-weight: 600;
+	width: 100%;
+	padding: 0.45rem 0;
+	top: -50px;
+	left: 0;
+	/* bottom: -5px; */
+	z-index: 9999;
+	/* rotate: 40deg;
+	top: 35px;
+	right: -85px; */
+}
+
 /* INFO PART */
 .project-info {
 	margin: 2.4rem auto 3.6rem auto;
 	padding: 0 1.2rem;
 	align-items: center;
+	position: relative;
 }
 
 .project-title {
