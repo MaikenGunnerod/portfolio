@@ -1,0 +1,8 @@
+.section-hobby .grid {
+	gap: 2.4rem;
+}
+
+.hobby-3d img,
+.hobby-digital img {
+	width: 45rem;
+}
