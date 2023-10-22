@@ -1,12 +1,28 @@
 .section-hobby .grid {
-	gap: 2.4rem;
+	column-gap: 2.4rem;
+	row-gap: 3.6rem;
+}
+
+/* DRAWING SECTION */
+.section-drawing .grid {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.hobby-drawing img {
+	width: 100%;
+}
+
+/* DIGITAL ART + 3D SECTION */
+
+.section-digital .grid,
+.section-3d .grid {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .hobby-3d img,
 .hobby-digital img {
-	width: 45rem;
-}
-
-.hobby-drawing img {
-	width: 35rem;
+	/* width: 45rem; */
+	width: 100%;
 }

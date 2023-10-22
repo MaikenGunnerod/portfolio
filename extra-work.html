@@ -16,8 +16,51 @@
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="portfolio.css" />
 		<link rel="stylesheet" href="extra-work.css" />
+		<link rel="stylesheet" href="media-queries.css" />
 
 		<title>Maiken G</title>
+
+		<style>
+			/* 800px */
+			@media (max-width: 50em) {
+				.section-hobby {
+					padding: 9.6rem 0 0 0;
+				}
+
+				.section-3d {
+					padding-bottom: 9.6rem;
+				}
+			}
+
+			/* 656px */
+			@media (max-width: 41em) {
+				.section-hobby .grid {
+					gap: 2.4rem;
+				}
+
+				.section-drawing .grid-3-columns {
+					grid-template-columns: 1fr 1fr;
+				}
+
+				.section-drawing .grid {
+					width: 70%;
+					margin: 0 auto;
+				}
+
+				.section-digital .grid,
+				.section-3d .grid {
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
+			/* 400px */
+			@media (max-width: 25em) {
+				.section-hobby .grid {
+					gap: 1.2rem;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<header class="header">
