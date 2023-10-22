@@ -15,6 +15,14 @@
 
 /* 928px */
 @media (max-width: 58em) {
+	.section-title {
+		margin-bottom: 2.4rem;
+	}
+
+	.projects-grid {
+		margin: 1.2rem auto 4.8rem auto;
+	}
+
 	.grid-3-columns {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -41,6 +49,10 @@
 		gap: 1.5rem;
 	}
 
+	.project-status {
+		top: -40px;
+	}
+
 	.footer-nav-column {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -51,10 +63,6 @@
 @media (max-width: 41em) {
 	html {
 		font-size: 50%;
-	}
-
-	.section-title {
-		margin-bottom: 2.4rem;
 	}
 
 	/* HAMBURGER MENU NAV */
@@ -72,10 +80,6 @@
 	}
 
 	/* WEB DEV SECTION */
-
-	.projects-grid {
-		margin: 1.2rem auto 4.8rem auto;
-	}
 
 	.grid-3-columns {
 		grid-template-columns: 1fr;
