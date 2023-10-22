@@ -122,6 +122,11 @@ p {
 	width: 2.5rem;
 }
 
+#active-page:link,
+#active-page:visited {
+	color: #8b61cf;
+}
+
 /***********************/
 /* MAIN PAGE SECTION */
 /***********************/
@@ -213,7 +218,7 @@ p {
 }
 
 .about-description {
-	width: 70rem;
+	/* width: 70rem; */
 	margin: 0 auto;
 	letter-spacing: 0.05rem;
 }
