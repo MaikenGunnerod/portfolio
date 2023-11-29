@@ -26,13 +26,13 @@
 	/* text-transform: uppercase; */
 }
 
-.eye-icon {
+/* .eye-icon {
 	display: none;
 	width: 120rem;
 	position: absolute;
 	transform: translate(-50%, -55%);
 	opacity: 0.01;
-}
+} */
 
 /***********************/
 /* PROJECTS SECTION */
@@ -57,6 +57,7 @@
 	border-radius: 5px;
 	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.5);
 	transition: all ease 0.3s;
+	position: relative;
 }
 
 .project-item--1,

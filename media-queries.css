@@ -37,6 +37,63 @@
 	.project-item--6 {
 		margin-top: 0;
 	}
+
+	/* MOBILE NAVIGATION */
+	.button-mobile-nav {
+		display: block;
+		z-index: 9999;
+	}
+
+	.nav {
+		background-color: rgba(33, 37, 44, 0.97);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(100%);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.5s ease-in;
+
+		z-index: 1;
+
+		/* Hide navigation */
+		opacity: 0;
+
+		/* make unaccessible to mouse and keyboard */
+		pointer-events: noneM;
+
+		/* hide from screen readers */
+		visibility: hidden;
+	}
+
+	.nav-open .nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0);
+	}
+
+	.nav-open .icon-mobile-nav#close-mobile-nav {
+		display: block;
+	}
+
+	.nav-open .icon-mobile-nav#open-mobile-nav {
+		display: none;
+	}
+
+	.nav-list {
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.nav-list-item a:link,
+	.nav-list-item a:visited {
+		font-size: 2.4rem;
+	}
 }
 
 /* 800px */
@@ -45,9 +102,9 @@
 		font-size: 55%;
 	}
 
-	.nav-list {
+	/* .nav-list {
 		gap: 1.5rem;
-	}
+	} */
 
 	.project-status {
 		top: -40px;
@@ -68,7 +125,7 @@
 	/* HAMBURGER MENU NAV */
 	.nav-list {
 		flex-direction: column;
-		align-items: start;
+		/* align-items: start; */
 	}
 	.nav-list-item:first-of-type {
 		margin-right: 0;
