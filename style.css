@@ -33,6 +33,16 @@ a:visited {
     text-decoration: none;
 }
 
+.button--cta,
+.button--cta:link,
+.button--cta:visited {
+    color: var(--color--background-dark);
+    background-color: var(--color--primary);
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    display: inline-block;
+}
+
 /****************************/
 /* HEADER */
 /****************************/
