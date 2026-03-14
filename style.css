@@ -43,6 +43,10 @@ a:visited {
     display: inline-block;
 }
 
+section {
+    padding: 9.6rem 0;
+}
+
 .container {
     width: 112rem;
     margin: 0 auto;
