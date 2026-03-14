@@ -20,8 +20,20 @@ body {
 }
 
 /****************************/
+/* GLOBAL STYLES */
+/****************************/
+
+a,
+a:link,
+a:visited {
+    color: var(--color--foreground);
+    text-decoration: none;
+}
+
+/****************************/
 /* HEADER */
 /****************************/
+
 header {
     background-color: var(--color--background-dark);
     display: flex;
