@@ -52,3 +52,14 @@ header {
     gap: 3rem;
     list-style: none;
 }
+
+/****************************/
+/* HERO */
+/****************************/
+
+#section--hero {
+    background-image: url(media/main/hero-image.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
