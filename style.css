@@ -43,6 +43,11 @@ a:visited {
     display: inline-block;
 }
 
+.container {
+    width: 112rem;
+    margin: 0 auto;
+}
+
 /* HEADINGS */
 h1 {
     font-size: 7.2rem;
