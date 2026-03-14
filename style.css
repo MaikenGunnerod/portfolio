@@ -18,3 +18,24 @@ html {
 body {
     font-size: 1.6rem;
 }
+
+/****************************/
+/* HEADER */
+/****************************/
+header {
+    background-color: var(--color--background-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.header-logo {
+    width: 4rem;
+}
+
+.header--nav-list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
