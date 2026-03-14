@@ -94,3 +94,37 @@ header {
     height: 100vh;
     align-content: center;
 }
+
+/****************************/
+/* SELECTED PROJECTS */
+/****************************/
+
+#section--selected-projects {
+    background-color: var(--color--background-light);
+}
+
+#section--selected-projects .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container--project-cards {
+    display: flex;
+    gap: 4.8rem;
+}
+
+.project-card {
+    background-color: var(--color--background-dark);
+    width: 100%;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+.project-card-image {
+    width: 100%;
+}
+
+.project-card-info {
+    padding: 2.4rem;
+}
