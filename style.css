@@ -134,3 +134,13 @@ header {
 .project-card-info {
     padding: 2.4rem;
 }
+
+/****************************/
+/* SKILLS */
+/****************************/
+
+.container--skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+}
