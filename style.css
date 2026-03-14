@@ -67,6 +67,10 @@ h3 {
     margin-bottom: 0.8rem;
 }
 
+.nav-list {
+    list-style: none;
+}
+
 /****************************/
 /* HEADER */
 /****************************/
@@ -79,14 +83,40 @@ header {
     padding: 1rem 3rem;
 }
 
-.header-logo {
+.logo--header {
     width: 4rem;
 }
 
-.header--nav-list {
+.nav-list--header {
     display: flex;
     gap: 3rem;
-    list-style: none;
+}
+
+/****************************/
+/* FOOTER */
+/****************************/
+
+footer {
+    padding: 9.6rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column--about {
+    width: 40%;
+}
+
+.logo--footer {
+    width: 9.6rem;
+}
+
+.nav-list--footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
 /****************************/
