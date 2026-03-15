@@ -174,3 +174,30 @@ footer .container {
     grid-template-columns: repeat(2, 1fr);
     gap: 4.8rem;
 }
+
+/****************************/
+/* CTA */
+/****************************/
+#section--cta {
+    background-color: var(--color--background-light);
+    width: 80rem;
+    margin: 9.6rem auto 0 auto;
+    padding: 0;
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+}
+
+.cta--info {
+    padding: 7.2rem;
+}
+
+#section--cta h2 {
+    margin-bottom: 1.6rem;
+}
+
+.cta--image {
+    height: 100%;
+    width: 100%;
+}
