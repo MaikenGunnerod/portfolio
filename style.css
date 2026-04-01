@@ -38,13 +38,13 @@ a:visited {
 .button--cta:visited {
     color: var(--color--background-dark);
     background-color: var(--color--primary);
-    padding: 1rem 2rem;
+    padding: 0;
     border-radius: .4rem;
     display: inline-block;
 }
 
 section {
-    padding: 9.6rem 0;
+    padding: 0;
 }
 
 .container {
@@ -59,12 +59,10 @@ h1 {
 
 h2 {
     font-size: 3.6rem;
-    margin-bottom: 3.2rem;
 }
 
 h3 {
     font-size: 2.4rem;
-    margin-bottom: 0.8rem;
 }
 
 .nav-list {
@@ -80,7 +78,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 0;
 }
 
 .logo--header {
@@ -89,7 +87,6 @@ header {
 
 .nav-list--header {
     display: flex;
-    gap: 3rem;
 }
 
 /****************************/
@@ -97,7 +94,7 @@ header {
 /****************************/
 
 footer {
-    padding: 9.6rem 0;
+    padding: 0;
 }
 
 footer .container {
@@ -116,19 +113,16 @@ footer .container {
 .nav-list--footer {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
 }
 
 /****************************/
 /* HERO */
 /****************************/
 
-#section--hero {
-    background-image: url(media/main/hero-image.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    align-content: center;
+#section--hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /****************************/
@@ -147,7 +141,6 @@ footer .container {
 
 .container--project-cards {
     display: flex;
-    gap: 4.8rem;
 }
 
 .project-card {
@@ -161,10 +154,6 @@ footer .container {
     width: 100%;
 }
 
-.project-card-info {
-    padding: 2.4rem;
-}
-
 /****************************/
 /* SKILLS */
 /****************************/
@@ -172,29 +161,21 @@ footer .container {
 .container--skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4.8rem;
 }
 
 /****************************/
 /* CTA */
 /****************************/
+
 #section--cta {
     background-color: var(--color--background-light);
     width: 80rem;
-    margin: 9.6rem auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 0;
     border-radius: 0.8rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     overflow: hidden;
-}
-
-.cta--info {
-    padding: 7.2rem;
-}
-
-#section--cta h2 {
-    margin-bottom: 1.6rem;
 }
 
 .cta--image {
