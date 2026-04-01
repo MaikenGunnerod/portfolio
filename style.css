@@ -129,7 +129,15 @@ footer .container {
 /* HERO */
 /****************************/
 
-#section--hero .container {
+#section--hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 12.8rem 0 6.4rem 0;
+}
+
+.hero--info {
     display: flex;
     flex-direction: column;
     align-items: center;
