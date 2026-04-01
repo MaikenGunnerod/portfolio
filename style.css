@@ -77,6 +77,11 @@ h3 {
   list-style: none;
 }
 
+.logo--text {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
 /****************************/
 /* HEADER */
 /****************************/
@@ -133,11 +138,6 @@ footer .container {
 
 .copyright {
   font-size: 1.2rem;
-}
-
-.logo--footer {
-  font-size: 3.2rem;
-  font-weight: 700;
 }
 
 .footer-nav-columns {
