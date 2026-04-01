@@ -32,7 +32,6 @@ a:link,
 a:visited {
     color: var(--color--foreground);
     text-decoration: none;
-    line-height: 100%;
 }
 
 .button--cta,
@@ -40,7 +39,7 @@ a:visited {
 .button--cta:visited {
     color: var(--color--background-dark);
     background-color: var(--color--primary);
-    padding: 0;
+    padding: 0.8rem 1.6rem;
     border-radius: .4rem;
     display: inline-block;
 }
