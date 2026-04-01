@@ -78,15 +78,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 1.6rem 3.2rem;
 }
 
 .logo--header {
-    width: 4rem;
+    width: 5rem;
 }
 
 .nav-list--header {
     display: flex;
+    gap: 3.2rem
+}
+
+.nav-list--header a, .nav-list--header a:link, .nav-list--header a:visited {
+    font-weight: 700;
 }
 
 /****************************/
