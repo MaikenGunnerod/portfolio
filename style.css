@@ -45,7 +45,7 @@ a:visited {
 }
 
 section {
-  padding: 0;
+  padding: 6.4rem 0;
 }
 
 .container {
@@ -150,10 +150,6 @@ footer .container {
 /****************************/
 /* SELECTED PROJECTS */
 /****************************/
-
-#section--selected-projects {
-  padding: 6.4rem 0;
-}
 
 #section--selected-projects .container {
   display: flex;
