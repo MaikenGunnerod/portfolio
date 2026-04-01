@@ -1,0 +1,2 @@
+FIX ISSUES
+- Unwanted space between image and info text on project cards

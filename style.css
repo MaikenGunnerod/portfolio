@@ -151,19 +151,38 @@ footer .container {
 /* SELECTED PROJECTS */
 /****************************/
 
+#section--selected-projects {
+  padding: 6.4rem 0;
+}
+
+#section--selected-projects .container {
+  display: flex;
+  gap: 3.2rem;
+}
+
 .container--project-cards {
   display: flex;
+  gap: 1.6rem;
 }
 
 .project-card {
   background-color: var(--color--background-dark);
   width: 100%;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   overflow: hidden;
+  gap: 0;
 }
 
 .project-card-image {
   width: 100%;
+}
+
+.project-card-info {
+  background-color: var(--color--background-light);
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 /****************************/
