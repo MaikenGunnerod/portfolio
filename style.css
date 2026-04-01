@@ -11,6 +11,7 @@ html {
 :root {
   --color--primary: #f3a712;
   --color--foreground: #ffffff;
+  --color--foreground-90: rgba(255, 255, 255, 0.9);
   --color--background-dark: #08081d;
   --color--background-light: #111132;
 }
@@ -19,7 +20,7 @@ body {
   font-size: 1.6rem;
   line-height: 150%;
   font-family: "Rubik", sans-serif;
-  color: var(--color--foreground);
+  color: var(--color--foreground-90);
   background-color: var(--color--background-dark);
 }
 
@@ -61,16 +62,19 @@ section {
 h1 {
   font-size: 5.4rem;
   line-height: 100%;
+  color: var(--color--foreground);
 }
 
 h2 {
   font-size: 3.6rem;
   line-height: 110%;
+  color: var(--color--foreground);
 }
 
 h3 {
   font-size: 2.4rem;
   line-height: 110%;
+  color: var(--color--foreground);
 }
 
 .nav-list {
