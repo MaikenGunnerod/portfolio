@@ -42,6 +42,7 @@ a:visited {
   padding: 0.8rem 1.6rem;
   border-radius: 0.4rem;
   display: inline-block;
+  width: fit-content;
 }
 
 section {
@@ -227,18 +228,31 @@ footer .container {
 /* CTA */
 /****************************/
 
-#section--cta {
-  background-color: var(--color--background-light);
-  width: 80rem;
-  margin: 0 auto 0 auto;
-  padding: 0;
-  border-radius: 0.8rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+#section--cta .container {
+  display: flex;
+  flex-direction: row;
+  width: 74.2rem;
+  align-items: stretch;
   overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.cta--info {
+  background-color: var(--color--background-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 4.8rem;
+}
+
+.cta--info--text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .cta--image {
-  height: 100%;
-  width: 100%;
+  width: 24rem;
+  flex-shrink: 0;
+  background-color: var(--color--primary);
 }
