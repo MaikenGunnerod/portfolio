@@ -109,25 +109,60 @@ header {
 /****************************/
 
 footer {
-  padding: 0;
+  padding: 6.4rem 0;
 }
 
 footer .container {
   flex-direction: row;
-  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12.8rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .footer-column--about {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
 }
 
 .logo--footer {
-  width: 9.6rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.footer-nav-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 6.4rem;
 }
 
 .nav-list--footer {
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer--social-logos {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.footer--social-logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--color--foreground);
+  border-radius: 0.4rem;
+  display: inline-block;
 }
 
 /****************************/
