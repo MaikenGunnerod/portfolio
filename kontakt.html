@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maiken Gunnerøds portefølje" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maiken G</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo--text">MG</a>
+      <nav>
+        <ul class="nav-list--header nav-list">
+          <li><a href="prosjekter.html">Prosjekter</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
+          <li><a href="om-meg.html">Om meg</a></li>
+          <li><a href="#" class="active-link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section--contact">
+        <div class="container">
+          <div class="contact-info">
+            <h1>Kontakt meg</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
+              bibendum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
+              bibendum.
+            </p>
+            <a href="mailto:post@maikengunnerod.no" class="contact-email"
+              >post@maikengunnerod.no</a
+            >
+          </div>
+          <form>
+            <div class="input-container" id="input-container--name">
+              <label for="name-input">Navn</label>
+              <input
+                type="text"
+                id="name-input"
+                name="name"
+                placeholder="Ditt navn"
+                required
+              />
+            </div>
+
+            <div class="input-container" id="input-container--email">
+              <label for="email-input">E-post</label>
+              <input
+                type="email"
+                id="email-input"
+                name="email"
+                placeholder="Din e-post"
+                required
+              />
+            </div>
+
+            <div class="input-container" id="input-container--topic">
+              <label for="topic-input">Tema</label>
+              <input
+                type="text"
+                id="topic-input"
+                name="topic"
+                placeholder="Hva handler henvendelsen om?"
+                required
+              />
+            </div>
+
+            <div class="input-container" id="input-container--message">
+              <label for="message-input">Melding</label>
+              <textarea
+                id="message-input"
+                name="message"
+                rows="5"
+                placeholder="Din melding"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button--cta">Send melding</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-column footer-column--about">
+          <a href="#" class="logo--text">MG</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
+            bibendum.
+          </p>
+          <p class="copyright">Copyright &copy; 2026 Maiken Gunnerød</p>
+        </div>
+        <div class="footer-nav-columns">
+          <nav class="footer-column">
+            <h3>Ferdigheter</h3>
+            <ul class="nav-list--footer nav-list">
+              <li><a href="#">Grafisk design</a></li>
+              <li><a href="#">Film og lyd</a></li>
+              <li><a href="#">Webutvikling</a></li>
+              <li><a href="#">3D</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-column">
+            <h3>Snarveier</h3>
+            <ul class="nav-list--footer nav-list">
+              <li><a href="prosjekter.html">Prosjekter</a></li>
+              <li><a href="galleri.html">Galleri</a></li>
+              <li><a href="om-meg.html">Om meg</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-column">
+            <h3>Kontakt</h3>
+            <ul class="nav-list--footer nav-list">
+              <li>
+                <a href="mailto:post@maikengunnerod.no"
+                  >post@maikengunnerod.no</a
+                >
+              </li>
+              <li class="footer--social-logos">
+                <a href="#" class="footer--social-logo"></a>
+                <a href="#" class="footer--social-logo"></a>
+                <a href="#" class="footer--social-logo"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -33,6 +37,12 @@ a:link,
 a:visited {
   color: var(--color--foreground);
   text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
 }
 
 .button--cta,
@@ -77,6 +87,7 @@ h3 {
   color: var(--color--foreground);
 }
 
+/* OTHER */
 .nav-list {
   list-style: none;
 }
@@ -84,6 +95,12 @@ h3 {
 .logo--text {
   font-size: 3.2rem;
   font-weight: 700;
+}
+
+.active-link,
+.active-link:link,
+.active-link:visited {
+  border-bottom: 0.2rem solid var(--color--primary);
 }
 
 /****************************/
@@ -111,6 +128,10 @@ header {
 .nav-list--header a:link,
 .nav-list--header a:visited {
   font-weight: 700;
+}
+
+.nav-list--header a:hover {
+  border-bottom: 0.2rem solid var(--color--primary);
 }
 
 /****************************/
@@ -156,6 +177,12 @@ footer .container {
   gap: 0.8rem;
 }
 
+.nav-list--footer a,
+.nav-list--footer a:link,
+.nav-list--footer a:visited {
+  color: var(--color--foreground-90);
+}
+
 .footer--social-logos {
   display: flex;
   gap: 0.8rem;
@@ -164,13 +191,57 @@ footer .container {
 .footer--social-logo {
   width: 2.4rem;
   height: 2.4rem;
-  background-color: var(--color--foreground);
+  background-color: var(--color--foreground-90);
   border-radius: 0.4rem;
   display: inline-block;
 }
 
 /****************************/
-/* HERO */
+/* TITLE SECTIONS */
+/****************************/
+
+#section--title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+/****************************/
+/* CTA SECTIONS */
+/****************************/
+
+#section--cta .container {
+  display: flex;
+  flex-direction: row;
+  width: 74.2rem;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.cta--info {
+  background-color: var(--color--background-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 4.8rem;
+}
+
+.cta--info--text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cta--image {
+  width: 24rem;
+  flex-shrink: 0;
+  background-color: var(--color--primary);
+}
+
+/****************************/
+/* HOMEPAGE - HERO */
 /****************************/
 
 #section--hero {
@@ -188,7 +259,7 @@ footer .container {
 }
 
 /****************************/
-/* SELECTED PROJECTS */
+/* HOMEPAGE -  SELECTED PROJECTS */
 /****************************/
 
 #section--selected-projects .container {
@@ -196,7 +267,7 @@ footer .container {
   gap: 3.2rem;
 }
 
-.container--project-cards {
+#section--selected-projects .container--project-cards {
   display: flex;
   gap: 1.6rem;
 }
@@ -223,8 +294,12 @@ footer .container {
   gap: 0.8rem;
 }
 
+.project-card-description {
+  color: var(--color--foreground-90);
+}
+
 /****************************/
-/* SKILLS */
+/* HOMEPAGE - SKILLS */
 /****************************/
 
 #section--skills .container {
@@ -266,34 +341,173 @@ footer .container {
 }
 
 /****************************/
-/* CTA */
+/* PROJECTS PAGE */
 /****************************/
 
-#section--cta .container {
-  display: flex;
-  flex-direction: row;
-  width: 74.2rem;
-  align-items: stretch;
-  overflow: hidden;
-  border-radius: 0.4rem;
+#section--projects .container--project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3.2rem;
+  column-gap: 1.6rem;
 }
 
-.cta--info {
-  background-color: var(--color--background-light);
+/****************************/
+/* PROJECT TEMPLATE PAGE */
+/****************************/
+
+#section--project-intro .container {
+  gap: 3.2rem;
+}
+
+#section--task,
+#section--solution {
+  padding: 0 0 6.4rem 0;
+}
+
+#section--task .container,
+#section--solution .container {
+  width: 74.2rem;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.project-stats {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  color: var(--color--primary);
+  font-weight: 700;
+}
+
+.project-stats--separator {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 100%;
+  background-color: var(--color--primary);
+}
+
+/****************************/
+/* GALLERY PAGE */
+/****************************/
+
+#section--gallery .container {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  padding: 4.8rem;
 }
 
-.cta--info--text {
+.flex--gallery {
+  width: 100%;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 40rem;
+  background-color: var(--color--primary);
+  border-radius: 0.4rem;
+}
+
+/****************************/
+/* ABOUT ME PAGE */
+/****************************/
+
+#section--who-am-i .container {
+  width: 93rem;
+  background-color: var(--color--background-light);
+  padding: 6.4rem;
+  border-radius: 0.4rem;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+#section--my-experience,
+#section--how-it-started {
+  padding: 0 0 6.4rem 0;
+}
+
+#section--my-experience .container,
+#section--how-it-started .container {
+  width: 93rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 3.2rem;
+}
+
+.about-me--text {
+  padding: 3.2rem 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
-.cta--image {
-  width: 24rem;
-  flex-shrink: 0;
+.about-me--image {
+  width: 100%;
   background-color: var(--color--primary);
+  border-radius: 0.4rem;
+}
+
+/****************************/
+/* CONTACT PAGE */
+/****************************/
+
+#section--contact .container {
+  width: 74.2rem;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+  width: 55.2rem;
+}
+
+.contact-email,
+.contact-email:link,
+.contact-email:visited {
+  color: var(--color--primary);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+  background-color: var(--color--background-light);
+  width: 100%;
+  padding: 6.4rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  color: var(--color--foreground);
+}
+
+input,
+textarea {
+  color: var(--color--foreground);
+  background-color: var(--color--background-dark);
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#input-container--topic,
+#input-container--message {
+  grid-column: span 2;
 }

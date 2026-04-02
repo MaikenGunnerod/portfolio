@@ -1,175 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Maiken Gunnerøds portefølje" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Maiken G</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="#" class="logo--text">MG</a>
-        <nav>
-            <ul class="nav-list--header nav-list">
-                <li><a href="#">Portefølje</a></li>
-                <li><a href="#">Galleri</a></li>
-                <li><a href="#">Om meg</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+      <a href="#" class="logo--text">MG</a>
+      <nav>
+        <ul class="nav-list--header nav-list">
+          <li><a href="prosjekter.html">Prosjekter</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
+          <li><a href="om-meg.html">Om meg</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="section--hero">
-            <div class="hero--info">
-                <h1>Maiken Gunnerød</h1>
-                <p>Innholdsprodusent og frontend-utvikler</p>
+      <section id="section--hero">
+        <div class="hero--info">
+          <h1>Maiken Gunnerød</h1>
+          <p>Innholdsprodusent og frontend-utvikler</p>
+        </div>
+        <a href="#" class="button--cta">Se mine prosjekter</a>
+      </section>
+      <section id="section--selected-projects">
+        <div class="container">
+          <h2>Utvalgte prosjekter</h2>
+          <div class="container--project-cards">
+            <a href="prosjekt-mal.html" class="project-card">
+              <img
+                src="media/projects/project--ITM-reklame.png"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h3 class="project-card-title">Tittel</h3>
+                <p class="project-card-description">
+                  Lorem ipsum dolor sit amet, consect adipiscing elit. Nunc
+                  aliquam dui venenatis neque consectetur.
+                </p>
+              </div>
+            </a>
+            <a href="prosjekt-mal.html" class="project-card">
+              <img
+                src="media/projects/project--ITM-reklame.png"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h3 class="project-card-title">Tittel</h3>
+                <p class="project-card-description">
+                  Lorem ipsum dolor sit amet, consect adipiscing elit. Nunc
+                  aliquam dui venenatis neque consectetur.
+                </p>
+              </div>
+            </a>
+            <a href="prosjekt-mal.html" class="project-card">
+              <img
+                src="media/projects/project--ITM-reklame.png"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h3 class="project-card-title">Tittel</h3>
+                <p class="project-card-description">
+                  Lorem ipsum dolor sit amet, consect adipiscing elit. Nunc
+                  aliquam dui venenatis neque consectetur.
+                </p>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="button--cta">Se flere prosjekter</a>
+        </div>
+      </section>
+      <section id="section--skills">
+        <div class="container">
+          <h2>Ferdigheter</h2>
+          <div class="container--skills">
+            <div class="skill">
+              <div class="skill-icons">
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+              </div>
+              <div class="skill-info">
+                <h3>Grafisk design</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  aliquam dui venenatis neque consectetur, eget sollicitudin
+                  ipsum bibendum.
+                </p>
+              </div>
             </div>
-                <a href="#" class="button--cta">Se mine prosjekter</a>
-        </section>
-        <section id="section--selected-projects">
-            <div class="container">
-                <h2>Utvalgte prosjekter</h2>
-                <div class="container--project-cards">
-                    <div class="project-card">
-                        <img src="media/projects/project--ITM-reklame.png" class="project-card-image">
-                        <div class="project-card-info">
-                            <h3 class="project-card-title">Tittel</h3>
-                            <p class="project-card-description">Lorem ipsum dolor sit amet, consect adipiscing elit. Nunc aliquam dui venenatis neque consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="media/projects/project--ITM-reklame.png" class="project-card-image">
-                        <div class="project-card-info">
-                            <h3 class="project-card-title">Tittel</h3>
-                            <p class="project-card-description">Lorem ipsum dolor sit amet, consect adipiscing elit. Nunc aliquam dui venenatis neque consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="media/projects/project--ITM-reklame.png" class="project-card-image">
-                        <div class="project-card-info">
-                            <h3 class="project-card-title">Tittel</h3>
-                            <p class="project-card-description">Lorem ipsum dolor sit amet, consect adipiscing elit. Nunc aliquam dui venenatis neque consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="button--cta">Se flere prosjekter</a>
+            <div class="skill">
+              <div class="skill-icons">
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+              </div>
+              <div class="skill-info">
+                <h3>Film og lyd</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  aliquam dui venenatis neque consectetur, eget sollicitudin
+                  ipsum bibendum.
+                </p>
+              </div>
             </div>
-        </section>
-        <section id="section--skills">
-            <div class="container">
-                <h2>Ferdigheter</h2>
-                <div class="container--skills">
-                    <div class="skill">
-                        <div class="skill-icons">
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                        </div>
-                        <div class="skill-info">
-                            <h3>Grafisk design</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam dui venenatis neque consectetur, eget sollicitudin ipsum bibendum.</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-icons">
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                        </div>
-                        <div class="skill-info">
-                            <h3>Film og lyd</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam dui venenatis neque consectetur, eget sollicitudin ipsum bibendum.</p>
-                        </div>
-                    </div>
-                   <div class="skill">
-                    <div class="skill-icons">
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                        </div>
-                        <div class="skill-info">
-                            <h3>Webutvikling</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam dui venenatis neque consectetur, eget sollicitudin ipsum bibendum.</p>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-icons">
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                            <div class="skill-icon"></div>
-                        </div>
-                        <div class="skill-info">
-                            <h3>3D</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam dui venenatis neque consectetur, eget sollicitudin ipsum bibendum.</p>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section id="section--cta">
-            <div class="container">
-                <div class="cta--info">
-                    <div class="cta--info--text">
-                        <h2>Hei!</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam dui venenatis neque consectetur, eget sollicitudin ipsum bibendum.</p>
-                    </div>
-                    <a href="#" class="button--cta">Bli bedre kjent med meg</a>
-                </div>
-                <div class="cta--image"></div>
+            <div class="skill">
+              <div class="skill-icons">
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+              </div>
+              <div class="skill-info">
+                <h3>Webutvikling</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  aliquam dui venenatis neque consectetur, eget sollicitudin
+                  ipsum bibendum.
+                </p>
+              </div>
             </div>
-        </section>
+            <div class="skill">
+              <div class="skill-icons">
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+                <div class="skill-icon"></div>
+              </div>
+              <div class="skill-info">
+                <h3>3D</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  aliquam dui venenatis neque consectetur, eget sollicitudin
+                  ipsum bibendum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section--cta">
+        <div class="container">
+          <div class="cta--info">
+            <div class="cta--info--text">
+              <h2>Hei!</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
+                bibendum.
+              </p>
+            </div>
+            <a href="#" class="button--cta">Bli bedre kjent med meg</a>
+          </div>
+          <div class="cta--image"></div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="footer-column footer-column--about">
-                <a href="#" class="logo--text">MG</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam dui venenatis neque consectetur, eget sollicitudin ipsum bibendum.</p>
-                <p class="copyright">Copyright &copy; 2026 Maiken Gunnerød</p>
-            </div>
-            <div class="footer-nav-columns">
-                <nav class="footer-column">
-                    <h3>Ferdigheter</h3>
-                    <ul class="nav-list--footer nav-list">
-                        <li><a href="#">Grafisk design</a></li>
-                        <li><a href="#">Film og lyd</a></li>
-                        <li><a href="#">Webutvikling</a></li>
-                        <li><a href="#">3D</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-column">
-                    <h3>Snarveier</h3>
-                    <ul class="nav-list--footer nav-list">
-                        <li><a href="#">Prosjekter</a></li>
-                        <li><a href="#">Galleri</a></li>
-                        <li><a href="#">Om meg</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-column">
-                    <h3>Kontakt</h3>
-                    <ul class="nav-list--footer nav-list">
-                        <li><a href="#">post@maikengunnerod.no</a></li>
-                        <li class="footer--social-logos">
-                            <a href="#" class="footer--social-logo"></a>
-                            <a href="#" class="footer--social-logo"></a>
-                            <a href="#" class="footer--social-logo"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="footer-column footer-column--about">
+          <a href="#" class="logo--text">MG</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
+            bibendum.
+          </p>
+          <p class="copyright">Copyright &copy; 2026 Maiken Gunnerød</p>
         </div>
+        <div class="footer-nav-columns">
+          <nav class="footer-column">
+            <h3>Ferdigheter</h3>
+            <ul class="nav-list--footer nav-list">
+              <li><a href="#">Grafisk design</a></li>
+              <li><a href="#">Film og lyd</a></li>
+              <li><a href="#">Webutvikling</a></li>
+              <li><a href="#">3D</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-column">
+            <h3>Snarveier</h3>
+            <ul class="nav-list--footer nav-list">
+              <li><a href="prosjekter.html">Prosjekter</a></li>
+              <li><a href="galleri.html">Galleri</a></li>
+              <li><a href="om-meg.html">Om meg</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-column">
+            <h3>Kontakt</h3>
+            <ul class="nav-list--footer nav-list">
+              <li>
+                <a href="mailto:post@maikengunnerod.no"
+                  >post@maikengunnerod.no</a
+                >
+              </li>
+              <li class="footer--social-logos">
+                <a href="#" class="footer--social-logo"></a>
+                <a href="#" class="footer--social-logo"></a>
+                <a href="#" class="footer--social-logo"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
