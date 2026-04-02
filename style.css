@@ -170,7 +170,18 @@ footer .container {
 }
 
 /****************************/
-/* CTA */
+/* TITLE SECTIONS */
+/****************************/
+
+#section--title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+/****************************/
+/* CTA SECTIONS */
 /****************************/
 
 #section--cta .container {
@@ -229,7 +240,7 @@ footer .container {
   gap: 3.2rem;
 }
 
-.container--project-cards {
+#section--selected-projects .container--project-cards {
   display: flex;
   gap: 1.6rem;
 }
@@ -299,5 +310,12 @@ footer .container {
 }
 
 /****************************/
-/* PROJECTS PAGE - SKILLS */
+/* PROJECTS PAGE */
 /****************************/
+
+#section--projects .container--project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3.2rem;
+  column-gap: 1.6rem;
+}
