@@ -166,6 +166,12 @@ footer .container {
   gap: 0.8rem;
 }
 
+.nav-list--footer a,
+.nav-list--footer a:link,
+.nav-list--footer a:visited {
+  color: var(--color--foreground-90);
+}
+
 .footer--social-logos {
   display: flex;
   gap: 0.8rem;
@@ -174,7 +180,7 @@ footer .container {
 .footer--social-logo {
   width: 2.4rem;
   height: 2.4rem;
-  background-color: var(--color--foreground);
+  background-color: var(--color--foreground-90);
   border-radius: 0.4rem;
   display: inline-block;
 }
@@ -275,6 +281,10 @@ footer .container {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.project-card-description {
+  color: var(--color--foreground-90);
 }
 
 /****************************/
@@ -465,6 +475,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+label {
+  color: var(--color--foreground);
 }
 
 input,
