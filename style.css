@@ -342,3 +342,43 @@ footer .container {
   background-color: var(--color--primary);
   border-radius: 0.4rem;
 }
+
+/****************************/
+/* ABOUT ME PAGE */
+/****************************/
+
+#section--who-am-i .container {
+  width: 93rem;
+  background-color: var(--color--background-light);
+  padding: 6.4rem;
+  border-radius: 0.4rem;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+#section--my-experience,
+#section--how-it-started {
+  padding: 0 0 6.4rem 0;
+}
+
+#section--my-experience .container,
+#section--how-it-started .container {
+  width: 93rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 3.2rem;
+}
+
+.about-me--text {
+  padding: 3.2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.about-me--image {
+  width: 100%;
+  background-color: var(--color--primary);
+  border-radius: 0.4rem;
+}
