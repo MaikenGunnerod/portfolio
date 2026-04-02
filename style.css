@@ -331,6 +331,41 @@ footer .container {
 }
 
 /****************************/
+/* PROJECT TEMPLATE PAGE */
+/****************************/
+
+#section--project-intro .container {
+  gap: 3.2rem;
+}
+
+#section--task,
+#section--solution {
+  padding: 0 0 6.4rem 0;
+}
+
+#section--task .container,
+#section--solution .container {
+  width: 74.2rem;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.project-stats {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  color: var(--color--primary);
+  font-weight: 700;
+}
+
+.project-stats--separator {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 100%;
+  background-color: var(--color--primary);
+}
+
+/****************************/
 /* GALLERY PAGE */
 /****************************/
 
