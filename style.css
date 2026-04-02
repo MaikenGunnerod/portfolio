@@ -170,7 +170,40 @@ footer .container {
 }
 
 /****************************/
-/* HERO */
+/* CTA */
+/****************************/
+
+#section--cta .container {
+  display: flex;
+  flex-direction: row;
+  width: 74.2rem;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.cta--info {
+  background-color: var(--color--background-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 4.8rem;
+}
+
+.cta--info--text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cta--image {
+  width: 24rem;
+  flex-shrink: 0;
+  background-color: var(--color--primary);
+}
+
+/****************************/
+/* HOMEPAGE - HERO */
 /****************************/
 
 #section--hero {
@@ -188,7 +221,7 @@ footer .container {
 }
 
 /****************************/
-/* SELECTED PROJECTS */
+/* HOMEPAGE -  SELECTED PROJECTS */
 /****************************/
 
 #section--selected-projects .container {
@@ -224,7 +257,7 @@ footer .container {
 }
 
 /****************************/
-/* SKILLS */
+/* HOMEPAGE - SKILLS */
 /****************************/
 
 #section--skills .container {
@@ -266,34 +299,5 @@ footer .container {
 }
 
 /****************************/
-/* CTA */
+/* PROJECTS PAGE - SKILLS */
 /****************************/
-
-#section--cta .container {
-  display: flex;
-  flex-direction: row;
-  width: 74.2rem;
-  align-items: stretch;
-  overflow: hidden;
-  border-radius: 0.4rem;
-}
-
-.cta--info {
-  background-color: var(--color--background-light);
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  padding: 4.8rem;
-}
-
-.cta--info--text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.cta--image {
-  width: 24rem;
-  flex-shrink: 0;
-  background-color: var(--color--primary);
-}
