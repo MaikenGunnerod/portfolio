@@ -21,55 +21,79 @@
       <nav>
         <ul class="nav-list--header nav-list">
           <li><a href="prosjekter.html">Prosjekter</a></li>
-          <li><a href="#">Galleri</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
           <li><a href="om-meg.html">Om meg</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="section--title">
-        <h1>Galleri</h1>
-      </section>
-
-      <section id="section--gallery">
+      <section id="section--contact">
         <div class="container">
-          <div class="flex--gallery">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
+          <div class="contact-info">
+            <h1>Kontakt meg</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
+              bibendum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
+              bibendum.
+            </p>
+            <a href="mailto:post@maikengunnerod.no" class="contact-email"
+              >post@maikengunnerod.no</a
+            >
           </div>
-          <div class="flex--gallery">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-          </div>
-          <div class="flex--gallery">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-          </div>
-          <div class="flex--gallery">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section--cta">
-        <div class="container">
-          <div class="cta--info">
-            <div class="cta--info--text">
-              <h2>Hei!</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                aliquam dui venenatis neque consectetur, eget sollicitudin ipsum
-                bibendum.
-              </p>
+          <form>
+            <div class="input-container" id="input-container--name">
+              <label for="name-input">Navn</label>
+              <input
+                type="text"
+                id="name-input"
+                name="name"
+                placeholder="Ditt navn"
+                required
+              />
             </div>
-            <a href="#" class="button--cta">Bli bedre kjent med meg</a>
-          </div>
-          <div class="cta--image"></div>
+
+            <div class="input-container" id="input-container--email">
+              <label for="email-input">E-post</label>
+              <input
+                type="email"
+                id="email-input"
+                name="email"
+                placeholder="Din e-post"
+                required
+              />
+            </div>
+
+            <div class="input-container" id="input-container--topic">
+              <label for="topic-input">Tema</label>
+              <input
+                type="text"
+                id="topic-input"
+                name="topic"
+                placeholder="Hva handler henvendelsen om?"
+                required
+              />
+            </div>
+
+            <div class="input-container" id="input-container--message">
+              <label for="message-input">Melding</label>
+              <textarea
+                id="message-input"
+                name="message"
+                rows="5"
+                placeholder="Din melding"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button--cta">Send melding</button>
+          </form>
         </div>
       </section>
     </main>

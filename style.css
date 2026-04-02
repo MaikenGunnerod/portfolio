@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -33,6 +37,12 @@ a:link,
 a:visited {
   color: var(--color--foreground);
   text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
 }
 
 .button--cta,
@@ -381,4 +391,63 @@ footer .container {
   width: 100%;
   background-color: var(--color--primary);
   border-radius: 0.4rem;
+}
+
+/****************************/
+/* CONTACT PAGE */
+/****************************/
+
+#section--contact .container {
+  width: 74.2rem;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+  width: 55.2rem;
+}
+
+.contact-email,
+.contact-email:link,
+.contact-email:visited {
+  color: var(--color--primary);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+  background-color: var(--color--background-light);
+  width: 100%;
+  padding: 6.4rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input,
+textarea {
+  color: var(--color--foreground);
+  background-color: var(--color--background-dark);
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#input-container--topic,
+#input-container--message {
+  grid-column: span 2;
 }
