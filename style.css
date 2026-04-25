@@ -422,12 +422,12 @@ footer .container {
   gap: 0.8rem;
 }
 #section--my-experience,
-#section--how-it-started {
+#section--interests {
   padding: 0 0 6.4rem 0;
 }
 
 #section--my-experience .container,
-#section--how-it-started .container {
+#section--interests .container {
   width: 93rem;
   display: flex;
   flex-direction: row;
@@ -443,10 +443,21 @@ footer .container {
   gap: 0.8rem;
 }
 
+.about-me--text--interests {
+  padding: 6.2rem 0;
+}
+
 .about-me--image {
   width: 100%;
   background-color: var(--color--primary);
   border-radius: 0.4rem;
+}
+
+.about-me--interests {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.8rem;
+  list-style: none;
 }
 
 /****************************/
