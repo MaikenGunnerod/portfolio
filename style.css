@@ -360,12 +360,14 @@ footer .container {
 }
 
 #section--task,
-#section--solution {
+#section--solution,
+#section--result {
   padding: 0 0 6.4rem 0;
 }
 
 #section--task .container,
-#section--solution .container {
+#section--solution .container,
+#section--result .container {
   width: 74.2rem;
   align-items: flex-start;
   gap: 0.8rem;
