@@ -103,6 +103,41 @@ h3 {
   border-bottom: 0.2rem solid var(--color--primary);
 }
 
+.grid--6-columns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.grid-item {
+  width: 100%;
+  height: 40rem;
+  background-color: var(--color--primary);
+  border-radius: 0.4rem;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+/* .flex-gallery {
+  width: 100%;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.flex-gallery--item {
+  width: 100%;
+  height: 40rem;
+  background-color: var(--color--primary);
+  border-radius: 0.4rem;
+} */
+
 /****************************/
 /* HEADER */
 /****************************/
@@ -359,6 +394,19 @@ footer .container {
   gap: 3.2rem;
 }
 
+.project-intro--images {
+  display: flex;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.project-intro--image {
+  width: 100%;
+  height: 40rem;
+  background-color: var(--color--primary);
+  border-radius: 0.4rem;
+}
+
 #section--task,
 #section--solution,
 #section--result {
@@ -388,28 +436,19 @@ footer .container {
   background-color: var(--color--primary);
 }
 
+#section--previews {
+  background-color: var(--color--background-light);
+}
+
 /****************************/
 /* GALLERY PAGE */
 /****************************/
-
+/* 
 #section--gallery .container {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-}
-
-.flex--gallery {
-  width: 100%;
-  display: flex;
-  gap: 1.6rem;
-}
-
-.gallery-item {
-  width: 100%;
-  height: 40rem;
-  background-color: var(--color--primary);
-  border-radius: 0.4rem;
-}
+} */
 
 /****************************/
 /* ABOUT ME PAGE */
