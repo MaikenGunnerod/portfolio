@@ -110,9 +110,22 @@ h3 {
   width: 100%;
 }
 
+.grid--4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.grid--3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
 .grid-item {
   width: 100%;
-  height: 40rem;
   background-color: var(--color--primary);
   border-radius: 0.4rem;
 }
@@ -436,8 +449,34 @@ footer .container {
   background-color: var(--color--primary);
 }
 
-#section--previews {
+#section--media {
   background-color: var(--color--background-light);
+}
+
+#section--media .container {
+  gap: 6.4rem;
+}
+
+.media--subsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.grid-item--size-ig {
+  /* height: 33.5rem; */
+  aspect-ratio: 4/5;
+}
+
+.grid-item--size-a3 {
+  /* height: 37.7rem; */
+  aspect-ratio: 1/1.414;
+}
+
+.grid-item--size-reel {
+  /* height: 64.474rem; */
+  aspect-ratio: 9/16;
 }
 
 /****************************/
@@ -449,6 +488,10 @@ footer .container {
   flex-direction: column;
   gap: 1.6rem;
 } */
+
+#section--gallery .grid-item {
+  height: 40rem;
+}
 
 /****************************/
 /* ABOUT ME PAGE */
