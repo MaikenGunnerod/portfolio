@@ -463,6 +463,7 @@ footer .container {
 
 .project-hero--keywords th {
   text-align: left;
+  vertical-align: top;
   font-weight: 700;
 }
 
