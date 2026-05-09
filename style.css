@@ -17,6 +17,7 @@ html {
   --color--foreground: #ffffff;
   --color--foreground-90: rgba(255, 255, 255, 0.9);
   --color--background-dark: #08081d;
+  --color--background-dark-60: rgba(8, 8, 29, 0.6);
   --color--background-light: #111132;
 }
 
@@ -400,8 +401,62 @@ footer .container {
 }
 
 /****************************/
-/* PROJECT TEMPLATE PAGE */
+/* PROJECT PAGES */
 /****************************/
+
+#section--project-hero {
+  background-image:
+    linear-gradient(
+      var(--color--background-dark-60),
+      var(--color--background-dark-60)
+    ),
+    url(media/projects/sarpsborg-scene-film/sarpsborg-scene-film--hero.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#section--project-hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.project-hero--media {
+  width: 166%;
+}
+
+.project-hero--info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.project-hero--info-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project-hero--categories {
+  color: var(--color--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-hero--keywords {
+  width: fit-content;
+}
+
+.project-hero--keywords th {
+  text-align: left;
+  font-weight: 700;
+}
+
+.project-hero--keywords td {
+  padding-left: 0.8rem;
+}
 
 #section--project-intro .container {
   gap: 3.2rem;
@@ -420,10 +475,13 @@ footer .container {
   border-radius: 0.4rem;
 }
 
-#section--task,
 #section--solution,
 #section--result {
   padding: 0 0 6.4rem 0;
+}
+
+#section--task {
+  padding: 6.4rem 0;
 }
 
 #section--task .container,
