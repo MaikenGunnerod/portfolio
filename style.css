@@ -134,8 +134,9 @@ h3 {
 
 .grid-item {
   width: 100%;
-  background-color: var(--color--primary);
   border-radius: 0.4rem;
+  height: 100%;
+  object-fit: cover;
 }
 
 .span-2 {
@@ -557,6 +558,11 @@ footer .container {
 .grid-item--size-reel {
   /* height: 64.474rem; */
   aspect-ratio: 9/16;
+}
+
+.grid-item--size-landscape {
+  /* height: 33.5rem; */
+  aspect-ratio: 16/9;
 }
 
 /****************************/
