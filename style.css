@@ -422,8 +422,16 @@ footer .container {
   gap: 3.2rem;
 }
 
+#section--project-hero.project-hero--narrow .container {
+  width: 74.2rem;
+}
+
 .project-hero--media {
   width: 166%;
+}
+
+#section--project-hero.project-hero--narrow .project-hero--media {
+  width: 100%;
 }
 
 .project-hero--media img {
