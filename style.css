@@ -426,6 +426,10 @@ footer .container {
   width: 166%;
 }
 
+.project-hero--media img {
+  width: 100%;
+}
+
 .project-hero--info {
   display: flex;
   flex-direction: column;
