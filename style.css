@@ -17,6 +17,7 @@ html {
   --color--foreground: #ffffff;
   --color--foreground-90: rgba(255, 255, 255, 0.9);
   --color--background-dark: #08081d;
+  --color--background-dark-60: rgba(8, 8, 29, 0.6);
   --color--background-light: #111132;
 }
 
@@ -102,6 +103,62 @@ h3 {
 .active-link:visited {
   border-bottom: 0.2rem solid var(--color--primary);
 }
+
+.grid--6-columns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.grid--4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.grid--3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.grid--2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.grid-item {
+  width: 100%;
+  border-radius: 0.4rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+/* .flex-gallery {
+  width: 100%;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.flex-gallery--item {
+  width: 100%;
+  height: 40rem;
+  background-color: var(--color--primary);
+  border-radius: 0.4rem;
+} */
 
 /****************************/
 /* HEADER */
@@ -352,61 +409,138 @@ footer .container {
 }
 
 /****************************/
-/* PROJECT TEMPLATE PAGE */
+/* PROJECT PAGES */
 /****************************/
 
-#section--project-intro .container {
+#section--project-hero {
+  background-color: var(--color--background-light);
+}
+
+#section--project-hero .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 3.2rem;
 }
 
-#section--task,
-#section--solution {
+#section--project-hero.project-hero--narrow .container {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+  width: 74.2rem;
+}
+
+#section--project-hero.project-hero--narrow .project-hero--media {
+  width: 100%;
+}
+
+.project-hero--media img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+.project-hero--info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.project-hero--info-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project-hero--categories {
+  color: var(--color--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-hero--keywords {
+  width: fit-content;
+}
+
+.project-hero--keywords th {
+  text-align: left;
+  vertical-align: top;
+  font-weight: 700;
+}
+
+.project-hero--keywords td {
+  padding-left: 1.6rem;
+}
+
+#section--task {
+  padding: 6.4rem 0;
+}
+
+#section--solution,
+#section--result {
   padding: 0 0 6.4rem 0;
 }
 
 #section--task .container,
-#section--solution .container {
+#section--solution .container,
+#section--result .container {
   width: 74.2rem;
   align-items: flex-start;
   gap: 0.8rem;
 }
 
-.project-stats {
-  display: flex;
-  gap: 3.2rem;
-  align-items: center;
+#section--task h2,
+#section--solution h2,
+#section--result h2 {
   color: var(--color--primary);
-  font-weight: 700;
 }
 
-.project-stats--separator {
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 100%;
-  background-color: var(--color--primary);
+#section--media {
+  background-color: var(--color--background-light);
+}
+
+#section--media .container {
+  gap: 6.4rem;
+}
+
+.media--subsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.grid-item--size-ig {
+  /* height: 33.5rem; */
+  aspect-ratio: 4/5;
+}
+
+.grid-item--size-a3 {
+  /* height: 37.7rem; */
+  aspect-ratio: 1/1.414;
+}
+
+.grid-item--size-reel {
+  /* height: 64.474rem; */
+  aspect-ratio: 9/16;
+}
+
+.grid-item--size-landscape {
+  /* height: 33.5rem; */
+  aspect-ratio: 16/9;
 }
 
 /****************************/
 /* GALLERY PAGE */
 /****************************/
-
+/* 
 #section--gallery .container {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-}
+} */
 
-.flex--gallery {
-  width: 100%;
-  display: flex;
-  gap: 1.6rem;
-}
-
-.gallery-item {
-  width: 100%;
+#section--gallery .grid-item {
   height: 40rem;
-  background-color: var(--color--primary);
-  border-radius: 0.4rem;
 }
 
 /****************************/
