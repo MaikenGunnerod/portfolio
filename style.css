@@ -488,6 +488,12 @@ footer .container {
   gap: 0.8rem;
 }
 
+#section--task h2,
+#section--solution h2,
+#section--result h2 {
+  color: var(--color--primary);
+}
+
 #section--media {
   background-color: var(--color--background-light);
 }
