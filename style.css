@@ -404,7 +404,7 @@ footer .container {
 /* PROJECT PAGES */
 /****************************/
 
-#section--project-hero {
+/* #section--project-hero {
   background-image:
     linear-gradient(
       var(--color--background-dark-60),
@@ -413,7 +413,7 @@ footer .container {
     url(media/projects/sarpsborg-scene-film/sarpsborg-scene-film--hero.png);
   background-size: cover;
   background-position: bottom;
-}
+} */
 
 #section--project-hero .container {
   display: flex;
