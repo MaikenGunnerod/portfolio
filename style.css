@@ -415,19 +415,21 @@ footer .container {
   background-position: bottom;
 } */
 
+#section--project-hero {
+  background-color: var(--color--background-light);
+}
+
 #section--project-hero .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 3.2rem;
 }
 
 #section--project-hero.project-hero--narrow .container {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
   width: 74.2rem;
-}
-
-.project-hero--media {
-  width: 166%;
 }
 
 #section--project-hero.project-hero--narrow .project-hero--media {
