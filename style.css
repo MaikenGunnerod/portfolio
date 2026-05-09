@@ -125,6 +125,13 @@ h3 {
   width: 100%;
 }
 
+.grid--2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  width: 100%;
+}
+
 .grid-item {
   width: 100%;
   background-color: var(--color--primary);
